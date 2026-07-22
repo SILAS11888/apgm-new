@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    line-height:1.6;
+    background:linear-gradient(135deg, #ffd54f 0%, #fff7cc 40%, #dbeafe 100%);
+    color:#123;
+}
+
+header{
+    background:linear-gradient(90deg, #0047AB, #1d4ed8);
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    position:sticky;
+    top:0;
+    gap:20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:80px;
+    max-width:100%;
+    height:auto;
+    object-fit:contain;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+.hero{
+    background:linear-gradient(135deg, rgba(255,213,79,0.95), rgba(219,234,254,0.9));
+    padding:70px 0 40px;
+    text-align:center;
+    color:#072f5a;
+}
+
+.hero-image img{
+    width:320px;
+    max-width:90%;
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.2);
+    margin:0 auto 35px;
+    display:block;
+}
+
+.hero-content{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+.hero h2{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#ffd54f;
+    color:#0047AB;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#dbeafe;
+}
+
+section{
+    padding:70px 10%;
+    margin:20px 5%;
+    border-radius:12px;
+    background:rgba(255,255,255,0.8);
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+section h2{
+    text-align:center;
+    color:#0047AB;
+    margin-bottom:25px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#0047AB;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav ul{
+flex-direction:column;
+margin-top:15px;
+}
+
+nav ul li{
+margin:8px 0;
+}
+
+.hero h2{
+font-size:32px;
+}
+
+}
