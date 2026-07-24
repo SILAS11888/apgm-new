@@ -138,23 +138,125 @@ footer{
     margin-top:40px;
 }
 
-@media(max-width:768px){
+@media (max-width: 900px){
+    body{
+        font-size:16px;
+    }
 
-header{
-flex-direction:column;
+    header{
+        flex-direction:column;
+        align-items:flex-start;
+        padding:15px 20px;
+        gap:10px;
+    }
+
+    .logo{
+        width:100%;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .logo h1{
+        font-size:clamp(16px, 3.6vw, 24px);
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        width:100%;
+        gap:8px;
+        margin-top:5px;
+    }
+
+    nav ul li{
+        margin:0;
+    }
+
+    section{
+        padding:40px 5%;
+        margin:15px 3%;
+    }
+
+    .hero{
+        padding:50px 0 30px;
+    }
+
+    .hero h2{
+        font-size:clamp(28px, 6vw, 40px);
+    }
+
+    .hero p{
+        font-size:clamp(16px, 3.8vw, 20px);
+    }
+
+    .hero-image img{
+        width:min(90vw, 320px);
+    }
 }
 
-nav ul{
-flex-direction:column;
-margin-top:15px;
-}
+@media (max-width: 600px){
+    header{
+        padding:12px 15px;
+    }
 
-nav ul li{
-margin:8px 0;
-}
+    .logo{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+        gap:8px;
+    }
 
-.hero h2{
-font-size:32px;
-}
+    .logo img{
+        width:60px;
+    }
 
+    nav a{
+        font-size:15px;
+    }
+
+    section{
+        padding:30px 4%;
+        margin:12px 2%;
+    }
+
+    .hero-content{
+        padding:0 10px;
+    }
+
+    .btn{
+        width:100%;
+        text-align:center;
+        margin-top:8px;
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr{
+        display:block;
+    }
+
+    thead{
+        display:none;
+    }
+
+    tr{
+        margin-bottom:12px;
+        border:1px solid #ddd;
+        border-radius:8px;
+        padding:8px;
+        background:#fff;
+    }
+
+    td{
+        border:none;
+        border-bottom:1px solid #eee;
+        padding:8px 4px;
+    }
+
+    td:last-child{
+        border-bottom:none;
+    }
 }
