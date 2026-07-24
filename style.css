@@ -161,17 +161,26 @@ footer{
         text-align:center;
     }
 
-    nav ul{
-        flex-direction:row;
-        flex-wrap:wrap;
+    nav{
         width:100%;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    nav ul{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        width:max-content;
         gap:8px;
         margin-top:5px;
-        justify-content:center;
+        justify-content:flex-start;
+        align-items:center;
     }
 
     nav ul li{
         margin:0;
+        flex-shrink:0;
     }
 
     section{
