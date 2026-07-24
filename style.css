@@ -183,6 +183,27 @@ footer{
         flex-shrink:0;
     }
 
+    .home-nav{
+        width:100%;
+        overflow-x:auto;
+    }
+
+    .home-nav ul{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        width:max-content;
+        gap:8px;
+        margin-top:5px;
+        justify-content:flex-start;
+        align-items:center;
+    }
+
+    .home-nav ul li{
+        margin:0;
+        flex-shrink:0;
+    }
+
     section{
         padding:40px 5%;
         margin:15px 3%;
