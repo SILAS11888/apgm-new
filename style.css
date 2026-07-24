@@ -162,10 +162,12 @@ footer{
     }
 
     nav ul{
-        flex-direction:column;
+        flex-direction:row;
+        flex-wrap:wrap;
         width:100%;
         gap:8px;
         margin-top:5px;
+        justify-content:center;
     }
 
     nav ul li{
