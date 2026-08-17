@@ -25,7 +25,7 @@ if (prayerForm) {
             return;
         }
 
-        const whatsappNumber = "2348036972689";
+        const whatsappNumber = "23480836972689";
         const text = encodeURIComponent(
             `Prayer Request\nName: ${name}\nEmail: ${email || "Not provided"}\n\nMessage:\n${message}`
         );
