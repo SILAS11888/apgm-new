@@ -183,6 +183,11 @@ section h2{
     object-position:25% center;
 }
 
+/* The portrait is tall; keep the face in the visible area of its gallery card. */
+.gallery-grid img.hero1-photo{
+    object-position:center top;
+}
+
 table{
     width:100%;
     border-collapse:collapse;
