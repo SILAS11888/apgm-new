@@ -327,7 +327,13 @@ footer{
     .hero-content{
         padding:0 10px;
     }
-
+    .hero-image img{
+        width:min(90vw, 320px);
+        height:390px;
+        max-width:none;
+        object-fit:cover;
+        object-position:center top;
+    }
     /* Keep the pastor's face prominent when the tall portrait is viewed on phones. */
     .hero-image img{
         width:min(90vw, 320px);
