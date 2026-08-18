@@ -152,6 +152,37 @@ section h2{
     margin-bottom:25px;
 }
 
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:20px;
+    margin-top:25px;
+}
+
+.gallery-grid figure{
+    margin:0;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.16);
+}
+
+.gallery-grid figcaption{
+    padding:9px 6px 0;
+    color:#0047AB;
+    font-weight:bold;
+    text-align:center;
+}
+
+.gallery-grid img.award-photo{
+    object-fit:cover;
+    object-position:25% center;
+}
+
 table{
     width:100%;
     border-collapse:collapse;
@@ -261,6 +292,10 @@ footer{
 
     .hero-image img{
         width:min(90vw, 320px);
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
     }
 }
 
