@@ -185,7 +185,9 @@ section h2{
 
 /* The portrait is tall; keep the face in the visible area of its gallery card. */
 .gallery-grid img.hero1-photo{
+    object-fit:contain;
     object-position:center top;
+    background:#f8fafc;
 }
 
 table{
